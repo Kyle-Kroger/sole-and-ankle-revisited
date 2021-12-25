@@ -1,4 +1,6 @@
+import { Columns } from 'react-feather';
 import { createGlobalStyle } from 'styled-components/macro';
+import { COLORS } from '../../constants';
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -67,6 +69,15 @@ table {
 }
 
 html {
+  --color-white: ${COLORS.white};
+  --color-primary: ${COLORS.primary};
+  --color-secondary: ${COLORS.secondary};
+  --color-grey-100: ${COLORS.gray[100]}
+  --color-grey-300: ${COLORS.gray[300]}
+  --color-grey-500: ${COLORS.gray[500]}
+  --color-grey-700: ${COLORS.gray[700]}
+  --color-grey-900: ${COLORS.gray[900]}
+
   /*
     Silence the warning about missing Reach Dialog styles
   */
